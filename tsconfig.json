@@ -1,0 +1,33 @@
+// {
+//   "compilerOptions": {
+//     "declaration": true,
+//     "outDir": "./dist/lib/es6",
+//     "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+//     /* Modules */
+//     "module": "ES6",                                /* Specify what module code is generated. */
+//     "lib": ["ES2022"],
+//     "moduleResolution": "nodenext",
+//     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+//     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+//     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules","**/*.spec.ts"]
+// }
+
+{
+  "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "declaration": true,
+      "esModuleInterop": true,
+      "lib": ["es5", "es2015", "es2016", "esnext"],
+      "types": ["node", "jest"],
+      "module": "es2015",
+      "moduleResolution": "node",
+      "outDir": "dist/esm",
+      "sourceMap": true,
+      "target": "es6"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
