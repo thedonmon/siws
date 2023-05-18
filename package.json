@@ -1,0 +1,37 @@
+{
+  "name": "@siw/siw-any",
+  "version": "1.0.0",
+  "description": "SIWE and Sign-In With Solana Implementation (SIWS). Felxible for more implementations",
+  "author": "0xDon",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.76.0",
+    "bs58": "^5.0.0",
+    "ethers": "^5.6.8",
+    "siwe": "^2.1.4",
+    "tweetnacl": "^1.0.3",
+    "uri-js": "^4.4.1"
+  },
+  "peerDependencies": {
+    "ethers": "^5.6.8 || ^6.0.8"
+  }
+}
