@@ -37,11 +37,16 @@ const signature = ...; // Get the signature
 const verified = await siweMessage.verify(signature);
 ```
 
+## Acknowledgements
+
+This package is built upon the excellent work of the SIWE team from spruceid. SIWE (Sign-In with Ethereum) is becoming more popular as a standard for authenticating users with web3 wallets. I extend their library by adding Solana functionality while maintaining compatibility with their core package.
+
+Their library serves as the foundation for this package, allowing us to provide sign-in capabilities using Solana and in the future, other blockchain networks.
+
+Please visit the [SIWE GitHub repository](https://github.com/spruceid/siwe) to learn more about their project and show your support by giving them a star.
+
 ## Contributing
 Contributions are welcome! If you have any ideas, bug fixes, or feature suggestions, please open an issue or submit a pull request on the GitHub repository.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-
-# siws
